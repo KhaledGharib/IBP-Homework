@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="IBP Homework" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Khaled Gharib" />
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>IBP HW</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <div class="main-nav-list">
+          <button class="main-nav-btn">
+            <ion-icon
+              id="prev-btn"
+              class="nav-icon"
+              name="arrow-back"
+            ></ion-icon>
+          </button>
+          <button class="main-nav-btn">
+            <ion-icon id="rest-btn" class="nav-icon" name="home"></ion-icon>
+          </button>
+          <button class="main-nav-btn">
+            <ion-icon
+              id="next-btn"
+              class="nav-icon"
+              name="arrow-forward"
+            ></ion-icon>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-HW1">
+        <div class="hero">
+          <h1 class="heading-primary">Home Work 1</h1>
+          <div class="hw-order">
+            <div class="blank">
+              <h2 class="heading-secondary">Click to Navigate</h2>
+              <a
+                class="open-new-page"
+                target="_blank"
+                href="https://www.google.com"
+                >Goolge</a
+              >
+              <a
+                class="open-new-page"
+                target="_blank"
+                href="https://github.com/KhaledGharib"
+                >Github</a
+              >
+            </div>
+
+            <dir class="client">
+              <h2 class="heading-secondary">Contact me</h2>
+
+              <div class="form-client">
+                <label
+                  >Tel: <a href="tel:544 338 47 50">+90 544 338 47 50</a></label
+                >
+                <label
+                  >Email:
+                  <a href="mailto:2010213626@ogrenci.karabuk.edu.tr"
+                    >2010213626@ogrenci.karabuk.edu.tr</a
+                  ></label
+                >
+              </div>
+            </dir>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-HW2">
+        <div class="container">
+          <h1 class="heading-primary">Home Work 2</h1>
+          <div class="img-container grid grid--2-col">
+            <div class="map-img">
+              <p class="heading-secondary">Map Image</p>
+
+              <img
+                src="./src/img/Camera-icon.png"
+                usemap="#test"
+                alt=""
+                srcset=""
+              />
+              <map name="test">
+                <area
+                  shape="rect"
+                  coords="34,44,270,350"
+                  alt="Computer"
+                  href="computer.htm"
+                />
+              </map>
+            </div>
+            <div>
+              <p class="heading-secondary">Gallery Image</p>
+              <div class="gallery">
+                <figure class="gallery-item">
+                  <img src="./src/img/img-1.jpg" alt="" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="./src/img/img-2.jpg" alt="" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="./src/img/img-3.jpg" alt="" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="./src/img/img-4.jpg" alt="" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="./src/img/img-5.jpg" alt="" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="./src/img/img-6.jpg" alt="" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="./src/img/img-7.jpg" alt="" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="./src/img/img-8.jpg" alt="" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="./src/img/img-9.jpg" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-HW3">
+        <div class="container">
+          <h1 class="heading-primary">Home Work 3</h1>
+          <div class="hw-container">
+            <div class="input-container">
+              <div class="input-item">
+                <label for="">hidden input</label>
+                <input type="hidden" />
+              </div>
+              <div class="input-item">
+                <label for="">tel input</label>
+                <input
+                  type="tel"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  placeholder="544-338-47-50"
+                />
+              </div>
+              <div class="input-item">
+                <label for="">email input</label>
+                <input type="email" name="" id="" />
+              </div>
+              <div class="input-item">
+                <label for="">number input</label>
+                <input type="number" name="" id="" />
+              </div>
+              <div class="input-item">
+                <label for="">range input<span id="res">0</span></label>
+                <span
+                  >0
+                  <input
+                    onchange="rangeTraker()"
+                    type="range"
+                    min="0"
+                    max="100"
+                    name=""
+                    id="range"
+                  />
+                  100
+                </span>
+              </div>
+              <div class="input-item">
+                <label for="">search input</label>
+                <input type="search" name="" id="" />
+              </div>
+              <div class="input-item">
+                <label for="">image input</label>
+                <input type="image" src="./src/img/309113.svg " alt="" />
+              </div>
+              <div class="input-item">
+                <label for="">week input</label>
+                <input type="week" name="" id="" />
+              </div>
+              <div class="input-item">
+                <label for="">url input</label>
+                <input type="url" name="" id="" />
+              </div>
+              <div class="input-item">
+                <label for="">date time local input</label>
+                <input type="datetime-local" name="" id="" />
+              </div>
+
+              <div class="input-item">
+                <label for="">month input</label>
+                <input type="month" name="" id="" />
+              </div>
+              <div class="input-item">
+                <label for="">time input</label>
+                <input type="time" name="" id="" />
+              </div>
+            </div>
+            <div class="meta">
+              <p class="heading-secondary">
+                Meta Information
+                <strong> (author, description, generator, keywords)</strong>
+              </p>
+              <ul class="meta">
+                <li class="meta-item">
+                  <strong> meta name="keywords" content="js,html,css"</strong>
+                  use for search engines
+                </li>
+                <li class="meta-item">
+                  <strong>
+                    meta name="description" content="IBP homwork"</strong
+                  >
+                  use for description of your web page)
+                </li>
+                <li class="meta-item">
+                  <strong> meta name="author" content="Khaled Gharib"</strong>
+                  (use for author of a page)
+                </li>
+                <li class="meta-item">
+                  <strong>
+                    meta name="viewport" content="width=device-width,
+                    initial-scale=1.0"</strong
+                  ><br />
+                  (use to setting the viewport to make your website look good on
+                  all devices)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-HW4">
+        <div class="container">
+          <h1 class="heading-primary">Home Work 4</h1>
+          <div class="hw4-container grid grid--2-col">
+            <div class="post">
+              <p class="heading-secondary">POST Form</p>
+              <form class="form-client">
+                <div class="form-item">
+                  <label for="">Your name</label>
+                  <input placeholder="username" type="text" />
+                </div>
+                <div class="form-item">
+                  <label for="">password</label>
+                  <input type="password" />
+                </div>
+                <div class="form-item">
+                  <label for="">Email</label>
+                  <input type="email" name="" placeholder="me@example.com" />
+                </div>
+                <button>Register !</button>
+              </form>
+            </div>
+
+            <div class="get">
+              <p class="heading-secondary">Get Form</p>
+              <form class="form-client">
+                <div class="form-item">
+                  <label for="">Your name</label>
+                  <input id="" placeholder="username" type="text" />
+                </div>
+                <div class="form-item">
+                  <label for="">password</label>
+                  <input type="password" name="" />
+                </div>
+                <button>Login !</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ionicon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./src/app.js"></script>
+  </body>
+</html>
