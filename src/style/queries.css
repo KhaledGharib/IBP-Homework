@@ -1,0 +1,22 @@
+@media (max-width: 60em) {
+  html {
+    font-size: 44%;
+  }
+  .input-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hw-container {
+    max-width: 90rem;
+  }
+  .container {
+    max-width: 90rem;
+  }
+  .section-HW3 {
+    margin-bottom: 60rem;
+    background-color: aqua;
+  }
+  .map-img img {
+    width: 20%;
+  }
+}
