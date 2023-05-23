@@ -60,6 +60,7 @@
                 href="https://github.com/KhaledGharib"
                 >Github</a
               >
+              <a class="open-new-page" href="#can">Canvas Section</a>
             </div>
 
             <dir class="client">
@@ -270,39 +271,59 @@
           <div class="hw4-container grid grid--2-col">
             <div class="post">
               <p class="heading-secondary">POST Form</p>
-              <form class="form-client">
+              <form class="form-client" method="POST" action="/register">
                 <div class="form-item">
-                  <label for="">Your name</label>
-                  <input placeholder="username" type="text" />
+                  <label for="post-username">Your name</label>
+                  <input
+                    id="post-username"
+                    placeholder="username"
+                    type="text"
+                    name="username"
+                  />
                 </div>
                 <div class="form-item">
-                  <label for="">password</label>
-                  <input type="password" />
+                  <label for="post-password">Password</label>
+                  <input id="post-password" type="password" name="password" />
                 </div>
                 <div class="form-item">
-                  <label for="">Email</label>
-                  <input type="email" name="" placeholder="me@example.com" />
+                  <label for="post-email">Email</label>
+                  <input
+                    id="post-email"
+                    type="email"
+                    name="email"
+                    placeholder="me@example.com"
+                  />
                 </div>
-                <button>Register !</button>
+                <button type="submit">Register!</button>
               </form>
             </div>
 
             <div class="get">
-              <p class="heading-secondary">Get Form</p>
-              <form class="form-client">
+              <p class="heading-secondary">GET Form</p>
+              <form class="form-client" method="GET" action="/login">
                 <div class="form-item">
-                  <label for="">Your name</label>
-                  <input id="" placeholder="username" type="text" />
+                  <label for="get-username">Your name</label>
+                  <input
+                    id="get-username"
+                    placeholder="username"
+                    type="text"
+                    name="username"
+                  />
                 </div>
                 <div class="form-item">
-                  <label for="">password</label>
-                  <input type="password" name="" />
+                  <label for="get-password">Password</label>
+                  <input id="get-password" type="password" name="password" />
                 </div>
-                <button>Login !</button>
+                <button type="submit">Login!</button>
               </form>
             </div>
           </div>
         </div>
+      </section>
+      <section id="can">
+        <h1 class="heading-primary">Canvas Section</h1>
+
+        <canvas id="canvas"> </canvas>
       </section>
     </main>
     <!-- ionicon -->
